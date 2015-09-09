@@ -16,8 +16,8 @@ use Drupal\editor\Entity\Editor;
  * Defines the "YouTubeButton" plugin.
  *
  * @CKEditorPlugin(
- *   id = "you_tube_button",
- *   label = @Translation("YouTubeButton")
+ *   id = "youtube",
+ *   label = @Translation("YouTube")
  * )
  */
 class YouTubeButton extends PluginBase implements CKEditorPluginInterface, CKEditorPluginButtonsInterface {
@@ -54,7 +54,7 @@ class YouTubeButton extends PluginBase implements CKEditorPluginInterface, CKEdi
    */
   function getButtons() {
     return array(
-      'YouTube' => array(
+      'Youtube' => array(
         'label' => t('YouTube'),
         'image' => drupal_get_path('module', 'ckeditor_youtube') . '/js/plugins/youtube/youtube/images/icon.png'
       )
