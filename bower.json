@@ -1,0 +1,16 @@
+{
+  "name": "y",
+  "version": "y",
+  "homepage": "https://github.com/FavishInc/ckeditor_youtube",
+  "authors": [
+    "colepacak <cole@favish.com>"
+  ],
+  "description": "Drupal 8 module that uses the CKEditor Youtube plugin",
+  "license": "MIT",
+  "dependencies": {
+    "ckeditor-youtube-plugin": "https://github.com/fonini/ckeditor-youtube-plugin.git"
+  },
+  "ignore": [
+    "bower_components"
+  ]
+}

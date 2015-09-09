@@ -46,7 +46,7 @@ class YouTubeButton extends PluginBase implements CKEditorPluginInterface, CKEdi
    * Implements \Drupal\ckeditor\Plugin\CKEditorPluginInterface::getFile().
    */
   function getFile() {
-    return drupal_get_path('module', 'ckeditor_youtube') . '/js/plugins/youtube/youtube/plugin.js';
+    return drupal_get_path('module', 'ckeditor_youtube') . '/bower_components/ckeditor-youtube-plugin/youtube/plugin.js';
   }
 
   /**
@@ -56,7 +56,7 @@ class YouTubeButton extends PluginBase implements CKEditorPluginInterface, CKEdi
     return array(
       'Youtube' => array(
         'label' => t('YouTube'),
-        'image' => drupal_get_path('module', 'ckeditor_youtube') . '/js/plugins/youtube/youtube/images/icon.png'
+        'image' => drupal_get_path('module', 'ckeditor_youtube') . '/bower_components/ckeditor-youtube-plugin/youtube/images/icon.png'
       )
     );
   }
