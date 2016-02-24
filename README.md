@@ -1,14 +1,7 @@
-CKEditor Youtube Button Plugin for Drupal 8
-===========================================
+# CKEditor Youtube Plugin for Drupal WYSIWYG
 
-Dependencies:
-------------
-* CKEditor module provided by Drupal core
-* Youtube CKEditor plugin via bower (http://ckeditor.com/addon/youtube)
-
-Installation:
-------------
-* Clone/download this module and place it in the modules directory of your project
-* Run `bower install` in the root of this directory to fetch dependencies, the main one being the CKEditor Youtube plugin
-* Enable module either via `drush en ckeditor_youtube` in your terminal in the context of your Drupal installation or in the admin UI at /admin/modules.
-* Choose a text format at /admin/config/content/formats where you'd like to enable the button and drag the button onto the active toolbar
+## Installation:
+* Enable the module, ex `drush en ckeditor_youtube`.
+* Check new **Youtube - GSB** option found at `admin/config/content/wysiwyg/profile/filtered_html/edit`
+* In the *CSS* tab at the bottom of `admin/config/content/wysiwyg/profile/filtered_html/edit`, add the path to the module CSS to the comma-delimited list in the *CSS path* field.
+  ex: `%bsites/all/modules/gsb_modules/website20/ckeditor_youtube/css/classes.css`

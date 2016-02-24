@@ -1,0 +1,10 @@
+name            = CKEditor Youtube - GSB
+description     = Add the youtube plugin to the CKEditor when used with WYSIWYG.  Custom implementation for GSB.
+core            = 7.x
+package         = GSB
+dependencies[]  = wysiwyg
+
+version = "7.x-1.0"
+core = "7.x"
+project = "ckeditor_youtube"
+
