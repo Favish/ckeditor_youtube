@@ -265,7 +265,7 @@
 						if ( this.getContentElement( 'youtubePlugin', 'chkResponsive').getValue() === true ) {
 							if (editor.config.youtube_classes) {
 								content += '<div class="'+editor.config.youtube_classes[0]+'">';
-								responsiveStyle = 'class="'+editor.config.youtube_classes[1]+'">';
+								responsiveStyle = 'class="'+editor.config.youtube_classes[1]+'"';
 							} else {
 								content += '<div style="position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;">';
 								responsiveStyle = 'style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"';
@@ -291,6 +291,7 @@
 
 function handleLinkChange( el, api )
 {
+	if (typeof el.getDialog().getContentElement( 'youtubePlugin', 'txtEmbed' ) !== 'undefined') {
 	if ( el.getValue().length > 0 )
 	{
 		el.getDialog().getContentElement( 'youtubePlugin', 'txtEmbed' ).disable();
@@ -298,6 +299,7 @@ function handleLinkChange( el, api )
 	else {
 		el.getDialog().getContentElement( 'youtubePlugin', 'txtEmbed' ).enable();
 	}
+}
 }
 
 function handleResponsiveChange(element, api) {
